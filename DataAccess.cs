@@ -18,8 +18,9 @@ public static class DataAccess
             conn.Open();
             return true;
         }
-        catch
+        catch //(Exception ex)
         {
+           // MessageBox.Show(ex.Message);
             return false;
         }
     }
